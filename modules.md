@@ -30,6 +30,7 @@ Fix me
 
  * Вместо es6    https://www.npmjs.com/package/iced-coffee-script
  * Вместо packer https://www.npmjs.com/package/google-closure-compiler
+ * Сжимаем css   https://www.npmjs.com/package/yuicompressor
  * Вместо css    https://www.npmjs.com/package/stylus (не рекомендуются less, sass и другие)
  * Вместо curl   https://www.npmjs.com/package/request
  * Вместо jquery (serverside) https://www.npmjs.com/package/cheerio
