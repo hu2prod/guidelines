@@ -26,7 +26,7 @@ Fix me
 
  * Вместо es6    https://www.npmjs.com/package/iced-coffee-script
  * Вместо packer https://www.npmjs.com/package/google-closure-compiler
- * Вместо css    https://www.npmjs.com/package/stylus
+ * Вместо css    https://www.npmjs.com/package/stylus (не рекомендуются less, sass и другие)
  * Вместо curl   https://www.npmjs.com/package/request
  * Вместо jquery (serverside) https://www.npmjs.com/package/cheerio
  * Вместо fs.watch https://www.npmjs.com/package/chokidar
