@@ -104,3 +104,17 @@ mixin use
       event_mixin @
       constructor : ()->
         event_mixin_constructor @
+
+await + err handle in single line
+
+    await fs.readFile file, defer(err, cont); throw err if err
+
+await + do combo
+
+    await
+      for file in file_list
+        cb = defer()
+        do (cb, file)->
+          await fs.readFile file, defer(err, cont); throw err if err
+          cb()
+    console.log("done")
