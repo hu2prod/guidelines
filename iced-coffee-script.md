@@ -204,3 +204,20 @@ await + do combo
           await fs.readFile file, defer(err, cont); throw err if err # настолько фатально, что внешний await пофиг
           cb()
     console.log("done")
+
+global scope do + for
+
+    for v in list # источник проблем т.к. v объявлена глобальной и случайно может быть переиспользована
+      some_action v
+    
+    do ()->
+      for v in list # а вот так ок, но в таком коде нельзя использовать await
+        some_action v
+      return # нужен
+    
+    await
+      cb = defer()
+      do (cb)->
+        for v in list # а тут можно и await+defer
+          await some_action v, defer()
+        cb()
