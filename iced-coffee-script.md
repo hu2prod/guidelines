@@ -140,6 +140,13 @@ delete означает метод, который удалит все ссыл�
     } = futurists # так еще больше ок, хоть и больше строк
     {poet: {name, address: [street, city]}} = futurists # да, ты мощный чувак, но нифига не понятно.
 
+Плохой тон
+
+    fn = (on_end)->
+      res = 1
+      # on_end res # даже если сейчас никакой ошибки не будет, то потом может появиться
+      on_end null, res # всегда оставляй первое место для возможной ошибки
+
 ## Типичные ошибки
 Забыл про то, что (почти) любое выражение в coffee-script возвращает результат
 
@@ -176,6 +183,17 @@ mixin use
 await + err handle in single line
 
     await fs.readFile file, defer(err, cont); throw err if err
+    
+    fn = (on_end)->
+      await fs.readFile file, defer(err, cont); return on_end err if err # вариация для callback
+      # если захотим что-то дописать, то сразу есть место куда, 
+      on_end null, cont
+    
+    fn2 = (on_end)->
+      await fs.readFile file, defer(err, cont); return on_end err if err
+      if cont.length == 1
+        return on_end new Error "Ну блин, пустой файл" # кастомные ошибки через тот же паттерн return on_end ...
+      on_end null, cont
 
 await + do combo
 
@@ -183,6 +201,6 @@ await + do combo
       for file in file_list
         cb = defer()
         do (cb, file)->
-          await fs.readFile file, defer(err, cont); throw err if err
+          await fs.readFile file, defer(err, cont); throw err if err # настолько фатально, что внешний await пофиг
           cb()
     console.log("done")
