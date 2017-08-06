@@ -5,6 +5,7 @@ must known API
  * https://nodejs.org/api/fs.html
  * https://nodejs.org/api/buffer.html
  * https://nodejs.org/api/url.html
+ * https://nodejs.org/api/events.html (прочитать и больше **НИКОГДА** так не делать. Использовать event_mixin)
  
 Express и компания
 
@@ -14,9 +15,15 @@ Express и компания
  * https://www.npmjs.com/package/serve-static (**не всегда рекомендуется, есть по-лучше альтернатива**)
  * https://www.npmjs.com/package/compression
 
-Полезные тулзы
+Fix me
 
  * fix js https://github.com/hu2prod/fy
+ * event_mixin
+ * lock_mixin
+ * Websocket_wrap
+
+Полезные тулзы
+
  * Вместо es6    https://www.npmjs.com/package/iced-coffee-script
  * Вместо packer https://www.npmjs.com/package/google-closure-compiler
  * Вместо css    https://www.npmjs.com/package/stylus
@@ -36,6 +43,7 @@ Express и компания
  * https://www.npmjs.com/package/mocha
  * https://www.npmjs.com/package/iced-coffee-coverage
 
-Arduino
+Сделать бочку
 
- * https://www.npmjs.com/package/johnny-five
+ * Arduino https://www.npmjs.com/package/johnny-five
+ * OpenCL https://www.npmjs.com/package/nooocl (Но лучше юзать обёртку gpu см distrib_gpu)
