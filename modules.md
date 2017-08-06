@@ -74,3 +74,9 @@ Fix me
    * https://www.npmjs.com/package/cryptojs (много всего, кроссплатформенность)
    * https://nodejs.org/api/crypto.html (встроено, производительность)
    * openssl (для странных вещей, не определился с модулем, потому exec)
+ * Лучшая библиотека для обработки изображений
+   * https://www.npmjs.com/package/canvas (почти полный canvas API на serverside)
+   * https://github.com/y-a-v-a/node-gd (GD, **этот модуль не пробовал**)
+   * https://www.npmjs.com/package/magick (image magick, хорош для очень больших изображений, есть рецепты, **этот модуль не пробовал**)
+     * ultimate tutorial с кучей примеров http://www.imagemagick.org/Usage/
+
