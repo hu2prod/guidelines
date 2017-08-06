@@ -32,6 +32,8 @@ Fix me
  * Вместо fs.watch https://www.npmjs.com/package/chokidar
  * Вместо bash   https://www.npmjs.com/package/shelljs
  * Вместо getopt https://www.npmjs.com/package/minimist
+ * Вместо Date.now если нужно мерять performance https://www.npmjs.com/package/performance-now
+ * Если нужно зафиксировать random https://www.npmjs.com/package/random-seed
 
 Веб сокеты
 
