@@ -55,3 +55,7 @@ Fix me
 
  * Arduino https://www.npmjs.com/package/johnny-five
  * OpenCL https://www.npmjs.com/package/nooocl (Но лучше юзать обёртку gpu см distrib_gpu)
+
+Прочие решения
+
+ * На чём писать GUI? Покачто на React
