@@ -15,6 +15,9 @@ Express и компания
  * https://www.npmjs.com/package/serve-static (**не всегда рекомендуется, есть по-лучше альтернатива**)
  * https://www.npmjs.com/package/compression
 
+Модули для
+ * mongodb https://www.npmjs.com/package/mongodb
+
 Fix me
 
  * fix js https://github.com/hu2prod/fy
