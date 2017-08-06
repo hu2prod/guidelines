@@ -64,4 +64,10 @@ Fix me
 
 Не определился
 
- * Лучшая библиотека для длинной арифметики (bignumber.js (кроссплатформенность) или bigint (libgmp, производительность))
+ * Лучшая библиотека для длинной арифметики
+   * https://www.npmjs.com/package/bignumber.js (кроссплатформенность)
+   * https://www.npmjs.com/package/bigint (libgmp, производительность))
+ * Лучшая библиотека для криптографии
+   * https://www.npmjs.com/package/cryptojs (много всего, кроссплатформенность)
+   * https://nodejs.org/api/crypto.html (встроено, производительность)
+   * openssl (для странных вещей, не определился с модулем, потому exec)
