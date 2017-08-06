@@ -40,8 +40,9 @@ Fix me
 
 Веб сокеты
 
- * hu2prod https://www.npmjs.com/package/ws
+ * быстро и в прод https://www.npmjs.com/package/ws
  * high perf, но не всё поддерживает https://www.npmjs.com/package/uws
+ * Не использовать (socket.io, primus)
 
 Тесты
 
