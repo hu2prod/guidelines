@@ -12,7 +12,7 @@ Express и компания
  * https://www.npmjs.com/package/express
  * https://www.npmjs.com/package/cookie-parser
  * https://www.npmjs.com/package/body-parser
- * https://www.npmjs.com/package/serve-static (**не всегда рекомендуется, есть по-лучше альтернатива**)
+ * https://www.npmjs.com/package/serve-static (**не всегда рекомендуется, есть по-лучше альтернатива (cache)**)
  * https://www.npmjs.com/package/compression
 
 Модули для
@@ -59,3 +59,4 @@ Fix me
 Прочие решения
 
  * На чём писать GUI? Покачто на React
+ * Использовать ли webpack? Нет, лучше webcom. Лучше нужное допилить.
