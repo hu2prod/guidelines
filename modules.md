@@ -18,6 +18,7 @@ Express и компания
 Модули для
  * mongodb https://www.npmjs.com/package/mongodb
  * postgres https://www.npmjs.com/package/pg (**давно не использовал**)
+   * TODO попробовать https://github.com/mscdex/pg2
 
 Fix me
 
