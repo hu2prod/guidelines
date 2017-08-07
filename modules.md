@@ -52,6 +52,7 @@ Fix me
  * https://www.npmjs.com/package/mocha
  * https://www.npmjs.com/package/iced-coffee-coverage
  * https://www.npmjs.com/package/phantomflow Если надо тестировать web-gui. **Suite'ы выполняются параллельно.**
+   * TODO такое же решение на jsdom
 
 Сделать бочку
 
