@@ -8,3 +8,8 @@ Regexp'ы
 
  * https://regexper.com/
  * http://regexpal.com.s3-website-us-east-1.amazonaws.com/
+
+Заоптимизируется ли мой JS
+
+ * https://closure-compiler.appspot.com/home
+
