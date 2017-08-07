@@ -103,3 +103,8 @@ Fix me
  * Лучшая библиотека для ssh
    * shelljs + exec ssh и поехали. В большинстве случаев это решает проблему максимально быстро
    * https://github.com/mscdex/ssh2 (**этот модуль не пробовал**)
+ * Лучшая библиотека для pdf
+   * https://www.npmjs.com/package/pdf.js (**этот модуль не пробовал**)
+   * https://www.npmjs.com/package/canvas (пишут, что может pdf, **этот модуль не пробовал для pdf**)
+ * Лучшая библиотека для работы с офисными документами (Excel, word)
+   * https://www.npmjs.com/package/xlsx (**мало использовал**)
