@@ -79,4 +79,7 @@ Fix me
    * https://github.com/y-a-v-a/node-gd (GD, **этот модуль не пробовал**)
    * https://www.npmjs.com/package/magick (image magick, хорош для очень больших изображений, есть рецепты, **этот модуль не пробовал**)
      * ultimate tutorial с кучей примеров http://www.imagemagick.org/Usage/
-
+ * Лучшая библиотека для работы с xml
+   * Лучшее решение - уйти от работодателя, который заставляет тебя работать с xml
+   * https://www.npmjs.com/package/sax (**этот модуль не пробовал**)
+   * https://www.npmjs.com/package/xmldom (**этот модуль не пробовал**)
