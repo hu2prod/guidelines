@@ -55,6 +55,7 @@ Fix me
 Сделать бочку
 
  * Arduino https://www.npmjs.com/package/johnny-five
+   * Для кастомных прошивок https://www.npmjs.com/package/serialport (были претензии к реализации, может зависать, делал патчи. **Нужно перепроверить**)
  * OpenCL https://www.npmjs.com/package/nooocl (Но лучше юзать обёртку gpu см distrib_gpu)
  * Веб-камера https://www.npmjs.com/package/v4l2camera
 
