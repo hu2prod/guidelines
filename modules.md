@@ -56,6 +56,7 @@ Fix me
 
  * Arduino https://www.npmjs.com/package/johnny-five
  * OpenCL https://www.npmjs.com/package/nooocl (Но лучше юзать обёртку gpu см distrib_gpu)
+ * Веб-камера https://www.npmjs.com/package/v4l2camera
 
 Прочие решения
 
@@ -80,6 +81,9 @@ Fix me
    * https://github.com/y-a-v-a/node-gd (GD, **этот модуль не пробовал**)
    * https://www.npmjs.com/package/magick (image magick, хорош для очень больших изображений, есть рецепты, **этот модуль не пробовал**)
      * ultimate tutorial с кучей примеров http://www.imagemagick.org/Usage/
+   * Сырое чтение и запись
+     * https://www.npmjs.com/package/jpeg-turbo
+     * https://www.npmjs.com/package/pngjs 
  * Лучшая библиотека для работы с xml
    * Лучшее решение - уйти от работодателя, который заставляет тебя работать с xml
    * https://www.npmjs.com/package/sax (**этот модуль не пробовал**)
