@@ -23,9 +23,9 @@ Express и компания
 Fix me
 
  * fix js https://github.com/hu2prod/fy
- * event_mixin
- * lock_mixin
- * Websocket_wrap
+ * fix EventEmitter https://github.com/hu2prod/event_mixin
+   * Также см https://github.com/hu2prod/lock_mixin как еще один полезный mixin
+ * fix websocket reconnect https://github.com/hu2prod/ws_wrap
 
 Полезные тулзы
 
