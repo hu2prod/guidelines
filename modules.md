@@ -36,8 +36,10 @@ Fix me
  * Вместо curl   https://www.npmjs.com/package/request
  * Вместо jquery (serverside) https://www.npmjs.com/package/cheerio
  * Вместо fs.watch https://www.npmjs.com/package/chokidar
- * Вместо bash   https://www.npmjs.com/package/shelljs
- * Вместо getopt https://www.npmjs.com/package/minimist
+ * Консоль
+   * Вместо bash   https://www.npmjs.com/package/shelljs
+   * Вместо getopt https://www.npmjs.com/package/minimist
+   * Таблица https://github.com/Automattic/cli-table
  * Вместо Date.now если нужно мерять performance https://www.npmjs.com/package/performance-now
  * Если нужно зафиксировать random https://www.npmjs.com/package/random-seed
 
@@ -119,3 +121,6 @@ Experimental queue
   * Замена phantomjs https://github.com/graphcool/chromeless
   * Сделать gif-demo для github с консоли https://github.com/chjj/ttystudio
   * Консольный мини-рендер https://github.com/madbence/node-drawille
+  * multi progressbar
+    * https://github.com/codekirei/node-multispinner
+      * Прим. переделать и сделать иерархической
