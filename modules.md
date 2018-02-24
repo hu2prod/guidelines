@@ -118,3 +118,4 @@ Experimental queue
 
   * Замена phantomjs https://github.com/graphcool/chromeless
   * Сделать gif-demo для github с консоли https://github.com/chjj/ttystudio
+  * Консольный мини-рендер https://github.com/madbence/node-drawille
