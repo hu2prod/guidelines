@@ -121,6 +121,7 @@ Experimental queue
   * Замена phantomjs https://github.com/graphcool/chromeless
   * Сделать gif-demo для github с консоли https://github.com/chjj/ttystudio
   * Консольный мини-рендер https://github.com/madbence/node-drawille
+    * С большим API от Canvas https://github.com/madbence/node-drawille-canvas
   * multi progressbar
     * https://github.com/codekirei/node-multispinner
       * Прим. переделать и сделать иерархической
