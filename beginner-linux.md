@@ -10,6 +10,7 @@
   * `ls *.coffee` Просмотреть спиок файлов, которые имеют расширение `.coffee`
   * `ls src` Посмотреть список файлов в директории src
   * `ls src/*.coffee` Просмотреть спиок файлов, которые имеют расширение `.coffee` в директории src
+  * `ls ~` Просмотреть свою домашнюю папку
 ### cd
 Изменить директорию.
   * `cd src` Зайти в директорию src
@@ -25,16 +26,43 @@ cp - копирует, mv перемещает
     * `mv a b`
   * `cp -r dir1 dir2` скопировать директорию `dir1` в директорию `dir2`
     * `mv dir1 dir2`
+### mkdir
+создать каталог
+  * `mkdir my_dir` создать папку my_dir
+  * `mkdir -p my_dir/my_dir2/my_dir3` создать путь my_dir/my_dir2/my_dir3, все директории которые не существуют на пути будут созданы
+
+### scp
+Передача файлов на сервер и с сервера
+Прим. Все целевые файлы будут или заменены, или созданы, если отсутсвуют
+  * `scp local_file root@188.188.188.188:/path/on/server` скопировать local_file на сервер в папку /path/on/server
+  * `scp local_file root@188.188.188.188:/path/on/server/target_file` скопировать local_file на сервер и заменить файл target_file в папке /path/on/server
+  * `scp root@188.188.188.188:/path/on/server/target_file .` скопировать с сервера файл target_file в текущую папку
+  * `scp root@188.188.188.188:/path/on/server/target_file local_file` скопировать с сервера файл target_file в локальный файл local_file 
 
 ## Файлы
 ### Строки интерпретаторов
   * `#!/bin/bash` интерпретатор командной строки `bash`
   * `#!/usr/env/env node` интерпретатор node.js
-    * (Нужно установить [nvm](https://github.com/creationix/nvm))
+    * (Нужно установить [nvm](https://github.com/creationix/nvm) см. ниже)
   * `#!/usr/env/env iced` интерпретатор iced-coffee-script
     * (Нужно установить iced-coffee-script) `npm i -g iced-coffee-script`
 
-## Как установить nvm и первую версию node.js
+## Рецепты на разные случаи жизни
+
+### Как зайти по ssh на сервер
+
+  * `ssh root@@<188.188.188.188>` где <188.188.188.188> это IP вашего сервера
+
+### Как создать ключи
+  * `ssh-keygen`
+  * Много раз enter
+
+### Как прописать ключи на сервере
+
+  * У вас должны быть созданы ключи. Проверить это можно `ls ~./ssh`
+  * `ssh-copy-id root@<188.188.188.188>` где <188.188.188.188> это IP вашего сервера
+
+### Как установить nvm и первую версию node.js
   * `curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash`
   * Перелогинится в консоль
   * nvm install 6.6.0
