@@ -127,3 +127,4 @@ Experimental queue
   * multi progressbar
     * https://github.com/codekirei/node-multispinner
       * Прим. переделать и сделать иерархической
+  * Некоторые быстрые функции, которые можно потом встроить в fy https://github.com/codemix/fast.js
