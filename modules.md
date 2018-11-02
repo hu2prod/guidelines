@@ -96,7 +96,7 @@ Fix me
    * https://www.npmjs.com/package/sax (**этот модуль не пробовал**)
    * https://www.npmjs.com/package/xmldom (**этот модуль не пробовал**)
  * Лучшая библиотека для общения между потоками
-   * https://www.npmjs.com/package/ws (+ wrapper на reconnect)
+   * https://www.npmjs.com/package/ws (+ wrapper на reconnect https://github.com/hu2prod/ws_wrap)
    * https://github.com/squaremo/rabbit.js (минус rabbitmq имеет достаточно внезапный предел message per second)
      * Документация http://www.squaremobius.net/rabbit.js/
    * IPC ИМХО работает плохо. RAW TCP пока не умею готовить.
