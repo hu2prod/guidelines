@@ -128,3 +128,4 @@ Experimental queue
     * https://github.com/codekirei/node-multispinner
       * Прим. переделать и сделать иерархической
   * Некоторые быстрые функции, которые можно потом встроить в fy https://github.com/codemix/fast.js
+  * Небольшая таблица с производительностью разных модулей https://github.com/alexhultman/The-Node.js-performance-palette
