@@ -99,6 +99,7 @@ Fix me
    * https://www.npmjs.com/package/ws (+ wrapper на reconnect https://github.com/hu2prod/ws_wrap)
    * https://github.com/squaremo/rabbit.js (минус rabbitmq имеет достаточно внезапный предел message per second)
      * Документация http://www.squaremobius.net/rabbit.js/
+   * https://www.npmjs.com/package/mqtt (**этот модуль не пробовал**)
    * IPC ИМХО работает плохо. RAW TCP пока не умею готовить.
  * Лучшая библиотека для email
    * https://www.npmjs.com/package/imap (**этот модуль не пробовал**)
