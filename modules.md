@@ -131,3 +131,5 @@ Experimental queue
   * Небольшая таблица с производительностью разных модулей https://github.com/alexhultman/The-Node.js-performance-palette
   * Кандидат на замену rabbitmq для high performance https://www.npmjs.com/package/mqtt
     * Both broker and benchmark are in a very experimental and broken state currently
+  * base64 fast encoder/decoder https://github.com/lovell/64
+    * только для сообщений >1000 символов
