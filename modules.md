@@ -130,3 +130,4 @@ Experimental queue
   * Некоторые быстрые функции, которые можно потом встроить в fy https://github.com/codemix/fast.js
   * Небольшая таблица с производительностью разных модулей https://github.com/alexhultman/The-Node.js-performance-palette
   * Кандидат на замену rabbitmq для high performance https://www.npmjs.com/package/mqtt
+    * Both broker and benchmark are in a very experimental and broken state currently
