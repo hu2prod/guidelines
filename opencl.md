@@ -29,17 +29,25 @@
    * Имеет смысл разбивать на 2 kernel'а
 
 ## способы работы с памятью
- * _straighforward pipeline strict_
+ * _straightforward pipeline strict_
    * host -> readonly buffer
    * readonly buffer -> kernel -> writeonly buffer
    * writeonly buffer -> host
- * _straighforward pipeline_
+ * _straightforward pipeline_
    * host -> readonly buffer
    * readonly buffer -> kernel -> read/write buffer
    * read/write buffer -> kernel -> writeonly buffer
    * writeonly buffer -> host
    * Прим. нежелательно читать и писать в один и тот же буффер одним и тем же kernel'ом
-
+ * straightforward pipeline + dma trick
+   * stage 1 host -> readonly buffer 1
+   * stage 2
+     * host -> readonly buffer 2
+     * readonly buffer 1 -> kernel -> writeonly buffer 1
+   * stage 3
+     * host -> readonly buffer 1
+     * readonly buffer 2 -> kernel -> writeonly buffer 2
+     * writeonly buffer 1 -> host
 ## Идеальные заготовки
 ### 1 in - 1 out
  * low compute
