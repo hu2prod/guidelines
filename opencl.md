@@ -83,19 +83,24 @@
  * если доступ к памяти с в разные ячейки if обычно полезен, но надо мерять
 
 ## local и barrier
- * *не уверен - не используй*
+ * **не уверен - не используй**
  * загрузить 1 раз в local, оградиться barrier(CLK_LOCAL_MEM_FENCE) и использовать много раз неплохой паттерн
    * [пример 1](https://github.com/brian112358/avermore-miner/blob/43e36dff5c21ad1ba98ef4b0efa07592780028d8/kernel/x16.cl#L348)
- * *не уверен - не используй* barrier(CLK_GLOBAL_MEM_FENCE)
+ * **не уверен - не используй** barrier(CLK_GLOBAL_MEM_FENCE)
    * Даже если уверен - не используй
    * Имеет смысл разбивать на 2 kernel'а
 
+## atomics
+ * **не уверен - не используй**
+   * Заведи по переменной на каждый поток и пиши туда
+   * Потом на CPU соберешь
+
 ## Способы работы с памятью
- * _straightforward pipeline strict_
+ * **straightforward pipeline strict**
    * host -> readonly buffer
    * readonly buffer -> kernel -> writeonly buffer
    * writeonly buffer -> host
- * _straightforward pipeline_
+ * **straightforward pipeline**
    * host -> readonly buffer
    * readonly buffer -> kernel -> read/write buffer
    * read/write buffer -> kernel -> writeonly buffer
@@ -180,6 +185,7 @@
    * Если read rate < 50%
      * Возможно существует оракул который сможет угадывать какие зоны нужно читать а какие нет
      * Можно сразу запускать меньше потоков
+     * Можно переписать kernel из стиля "всё принимаем, всё выдаем" на "draw call"
    
 
 ## Прочие приемы оптимизации
