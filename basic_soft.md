@@ -1,6 +1,6 @@
 # Базовый софт, который должен быть везде
 
-    apt-get install -y htop atop iotop screen tmux mc git nano curl wget g++ build-essential gcc make cmake autoconf automake psmisc pciutils lm-sensors ethtool net-tools
+    apt-get install -y htop atop iotop screen tmux mc git nano curl wget g++ build-essential gcc make cmake autoconf automake psmisc pciutils lm-sensors ethtool net-tools mtr-tiny
 
  * htop
  * atop
@@ -24,3 +24,4 @@
    * для centos пакет называется lm_sensors
  * ethtool
  * net-tools (ifconfig)
+ * mtr-tiny
