@@ -16,7 +16,7 @@
    * g++ build-essential *(кажется только эти специфичны для ubuntu)
    * gcc make cmake autoconf automake
  * nvm
-   * nvm i 6.6
+   * nvm i 12
    * npm i -g iced-coffee-script
  * psmisc (killall)
  * pciutils (lspci)
