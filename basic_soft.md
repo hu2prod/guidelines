@@ -23,7 +23,7 @@
  * lm-sensors
    * для centos пакет называется lm_sensors
  * ethtool
- * net-tools (ifconfig)
+ * net-tools (ifconfig, netstat)
  * mtr-tiny
 
 # Настройки софта
