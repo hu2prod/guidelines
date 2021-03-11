@@ -35,3 +35,10 @@
 ## npm
 
     npm completion >> ~/.bashrc
+
+## screen
+nano ~/.screenrc
+
+    vbell on
+    vbell_msg ''
+    termcapinfo *  vb=:
