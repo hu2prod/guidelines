@@ -49,3 +49,5 @@ nano /etc/sysctl.conf
     
     fs.inotify.max_user_watches=524288
     fs.file-max=100000000
+
+Применить без перезагрузки `sysctl -p`
