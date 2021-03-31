@@ -42,3 +42,10 @@ nano ~/.screenrc
     vbell on
     vbell_msg ''
     termcapinfo *  vb=:
+
+## sysctl limits
+
+nano /etc/sysctl.conf
+    
+    fs.inotify.max_user_watches=524288
+    fs.file-max=100000000
