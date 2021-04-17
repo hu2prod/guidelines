@@ -51,3 +51,10 @@ nano /etc/sysctl.conf
     fs.file-max=100000000
 
 Применить без перезагрузки `sysctl -p`
+
+## security limits
+
+nano /etc/security/limits.conf
+
+    *   soft    nproc   1000000
+    *   hard    nproc   1000000
