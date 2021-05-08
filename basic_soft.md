@@ -1,6 +1,6 @@
 # Базовый софт, который должен быть везде
 
-    apt-get install -y htop atop iotop screen tmux mc git nano curl wget g++ build-essential gcc make cmake autoconf automake psmisc pciutils lm-sensors ethtool net-tools mtr-tiny
+    apt-get install -y htop atop iotop screen tmux mc git nano curl wget g++ build-essential gcc make cmake autoconf automake psmisc pciutils lm-sensors ethtool net-tools mtr-tiny expect
 
  * htop
  * atop
@@ -25,6 +25,7 @@
  * ethtool
  * net-tools (ifconfig, netstat)
  * mtr-tiny
+ * expect (https://superuser.com/questions/352697/preserve-colors-while-piping-to-tee)
 
 # Настройки софта
 ## git
