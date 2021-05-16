@@ -37,6 +37,7 @@
 ## npm
 
     npm completion >> ~/.bashrc
+    source ~/.bashrc
 
 ## screen
 nano ~/.screenrc
