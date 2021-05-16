@@ -61,3 +61,13 @@ nano /etc/security/limits.conf
 
     *   soft    nproc   1000000
     *   hard    nproc   1000000
+
+
+## locale
+
+    export LANG="en_US.utf8"
+    export LANGUAGE="en_US.utf8"
+    export LC_ALL="en_US.utf8"
+    update-locale LANG="en_US.utf8" LANGUAGE="en_US.utf8" LC_ALL="en_US.utf8"
+    localectl set-locale LANG=en_US.utf8
+
