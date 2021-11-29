@@ -40,6 +40,13 @@
     npm completion >> ~/.bashrc
     source ~/.bashrc
 
+# .bashrc aliases etc
+
+    function mkcd() {
+      mkdir $1
+      cd $1
+    }
+
 ## screen
 nano ~/.screenrc
 
