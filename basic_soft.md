@@ -15,7 +15,7 @@
  * ubuntu specific packages
    * g++ build-essential *(кажется только эти специфичны для ubuntu)
    * gcc make cmake autoconf automake
- * nvm ( `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash` )
+ * nvm `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash`
    * source ~/.bashrc
    * nvm i 16
    * npm i -g iced-coffee-script
