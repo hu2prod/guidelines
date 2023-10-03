@@ -44,6 +44,7 @@
     source ~/.bashrc
 
 # .bashrc aliases etc
+nano ~/.bashrc
 
     function mkcd() {
       mkdir $1
