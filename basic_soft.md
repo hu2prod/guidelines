@@ -83,3 +83,39 @@ nano /etc/security/limits.conf
     update-locale LANG="en_US.utf8" LANGUAGE="en_US.utf8" LC_ALL="en_US.utf8"
     localectl set-locale LANG=en_US.utf8
 
+# Composed script (user)
+
+    cp ~/.bashrc ~/.bashrc.bak
+    
+    export DEBIAN_FRONTEND=noninteractive
+    sudo apt-get update
+    sudo apt-get install -y htop atop iotop screen tmux mc git nano curl wget g++ build-essential gcc make cmake autoconf automake psmisc pciutils lm-sensors ethtool net-tools mtr-tiny expect moreutils autossh
+    
+    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+    source ~/.bashrc
+    nvm i 16
+    npm i -g iced-coffee-script pnpm
+    
+    curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash
+    echo "source ~/.git-completion.bash" >> ~/.bashrc
+    
+    npm completion >> ~/.bashrc
+    source ~/.bashrc
+    
+    echo 'function mkcd() { ' >> ~/.bashrc && \
+    echo '  mkdir -p "$1" &&' >> ~/.bashrc && \
+    echo '  cd "$1"' >> ~/.bashrc && \
+    echo '}' >> ~/.bashrc
+    source ~/.bashrc
+    
+    echo 'vbell on' >> ~/.screenrc && \
+    echo 'vbell_msg ""' >> ~/.screenrc && \
+    echo 'termcapinfo * vb=:' >> ~/.screenrc
+    
+    echo 'fs.inotify.max_user_watches=524288' | sudo tee -a /etc/sysctl.conf && \
+    echo 'fs.file-max=100000000' | sudo tee -a /etc/sysctl.conf
+    sudo sysctl -p
+    
+    echo '*   soft    nproc   1000000' | sudo tee -a /etc/security/limits.conf && \
+    echo '*   hard    nproc   1000000' | sudo tee -a /etc/security/limits.conf
+
