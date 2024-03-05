@@ -19,7 +19,7 @@
    * gcc make cmake autoconf automake
  * nvm `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash`
    * source ~/.bashrc
-   * nvm i 16
+   * nvm i 18
    * npm i -g iced-coffee-script pnpm
  * psmisc (killall)
  * pciutils (lspci)
