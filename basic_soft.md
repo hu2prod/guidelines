@@ -87,7 +87,7 @@ nano /etc/security/limits.conf
 
 
 ## git clone unique
-
+nano ~/.screenrc
 ```
 gcu() {
     # Check if URL is provided
