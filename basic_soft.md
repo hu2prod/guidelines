@@ -2,7 +2,7 @@
 
     export DEBIAN_FRONTEND=noninteractive
     apt-get update
-    apt-get install -y htop atop iotop screen tmux mc git nano curl wget g++ build-essential gcc make cmake autoconf automake psmisc pciutils lm-sensors ethtool net-tools mtr-tiny expect moreutils autossh
+    apt-get install -y htop atop iotop screen tmux mc git nano curl wget g++ build-essential gcc make cmake autoconf automake psmisc pciutils lm-sensors ethtool net-tools mtr-tiny expect moreutils autossh pkgconf
 
  * htop
  * atop
@@ -31,6 +31,7 @@
  * expect (https://superuser.com/questions/352697/preserve-colors-while-piping-to-tee)
  * moreutils (sponge)
  * autossh
+ * pkgconf
 
 # Настройки софта
 ## git
