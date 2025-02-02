@@ -2,7 +2,7 @@
 
     export DEBIAN_FRONTEND=noninteractive
     apt-get update
-    apt-get install -y htop atop iotop screen tmux mc git nano curl wget g++ build-essential gcc make cmake autoconf automake psmisc pciutils lm-sensors ethtool net-tools mtr-tiny expect moreutils autossh pkgconf
+    apt-get install -y htop atop iotop screen tmux mc git nano curl wget g++ build-essential gcc make cmake autoconf automake psmisc pciutils lm-sensors ethtool net-tools mtr-tiny expect moreutils autossh pkgconf jq
 
  * htop
  * atop
@@ -32,6 +32,7 @@
  * moreutils (sponge)
  * autossh
  * pkgconf
+ * jq
 
 # Настройки софта
 ## git
@@ -198,7 +199,7 @@ git_canon_all() {
     
     export DEBIAN_FRONTEND=noninteractive
     sudo apt-get update
-    sudo apt-get install -y htop atop iotop screen tmux mc git nano curl wget g++ build-essential gcc make cmake autoconf automake psmisc pciutils lm-sensors ethtool net-tools mtr-tiny expect moreutils autossh
+    sudo apt-get install -y htop atop iotop screen tmux mc git nano curl wget g++ build-essential gcc make cmake autoconf automake psmisc pciutils lm-sensors ethtool net-tools mtr-tiny expect moreutils autossh pkgconf jq
     
     curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
     source ~/.bashrc
